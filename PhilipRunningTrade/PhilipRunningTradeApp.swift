@@ -11,7 +11,19 @@ import SwiftUI
 struct PhilipRunningTradeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView() {
+                ContentView()
+                    .tabItem {
+                        Label("Home", systemImage: "house")
+                    }
+                ContentView()
+                    .tabItem {
+                        Label("List", systemImage: "bookmark")
+                    }
+            }.accentColor(.orange)
+            
         }
     }
 }
+
+
