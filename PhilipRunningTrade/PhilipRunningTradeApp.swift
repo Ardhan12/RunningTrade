@@ -14,11 +14,11 @@ struct PhilipRunningTradeApp: App {
             TabView() {
                 ContentView()
                     .tabItem {
-                        Label("Home", systemImage: "house")
+                        Label("top stock", systemImage: "house")
                     }
                 ContentView()
                     .tabItem {
-                        Label("List", systemImage: "bookmark")
+                        Label("buy/sell", systemImage: "arrow.left.arrow.right")
                     }
             }.accentColor(.orange)
             
